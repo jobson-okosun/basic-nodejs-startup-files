@@ -2,5 +2,6 @@
 
 module.exports.get_home = function(req, res){
 
-	res.send('home page');
+	res.locals.title = 'Jobson Okosun | Full Stack Web Developer';
+	res.render('home');
 }
